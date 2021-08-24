@@ -40,7 +40,7 @@
                 <td>
                   <a href="/view/{{dbs.id}}/" class="btn btn-secondary mb-1">Visualizar</a>
                   <a href="/edit/{{dbs.id}}/" class="btn btn-primary mb-1">Editar</a>
-                  <a href="/delete/{{dbs.id}}" class="btn btn-danger mb-1">Deletar</a>
+                  <a href="/delete/{{dbs.id}}" class="btn btn-danger mb-1 btnDel">Deletar</a>
                 </td>
               </tr>
             {% endfor %}
@@ -50,5 +50,7 @@
 
 
     </div>
+    {% load static %}
+    <script src="{% static 'app.js' %}"></script>
 </body>
 </html>
