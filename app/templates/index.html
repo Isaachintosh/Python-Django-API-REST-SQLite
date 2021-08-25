@@ -62,8 +62,8 @@
       {% if db.has_previous %}
         <a 
           href="?page={{db.previous_page_number}}"
-          class="btn btn-primary"
-        > Foo </a>
+          class="btn btn-secondary"
+        > Anterior </a>
       {% endif %}
 
       {{ db.number }}
@@ -72,7 +72,7 @@
         <a 
           href="?page={{db.next_page_number}}"
           class="btn btn-success"
-        > Bar </a>
+        > Próximo </a>
       {% endif %}
     </div>
     {% load static %}
