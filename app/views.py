@@ -4,16 +4,6 @@ from app.models import Carros
 from django.core.paginator import Paginator
 
 # Create your views here.
-
-def paginate(request, data):
-    all = Carros.objects.all()
-
-    paginator = Paginator(all, 3)
-    
-    pages = request.GET.get('page')
-    
-    data['db'] = paginator.get_page(pages)
-    
 def home(request):
     data = {}
     search = request.GET.get('search')
@@ -22,11 +12,12 @@ def home(request):
     else:
         data['db'] = Carros.objects.all()
     
-    paginate(request, data)
+    # all = Carros.objects.all()
+    paginator = Paginator(data['db'], 5)    
+    pages = request.GET.get('page')    
+    data['db'] = paginator.get_page(pages)
     
     return render(request, 'index.html', data)
-
-
 
 def form(request):
     data = {}
