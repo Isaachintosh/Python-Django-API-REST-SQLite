@@ -1,0 +1,14 @@
+asgiref==3.4.1
+click==8.0.1
+colorama==0.4.4
+dj-database-url==0.5.0
+Django==3.2.6
+django-heroku==0.3.1
+mysqlclient @ file:///C:/Users/mello/Desktop/Projetos/Cursos/Python-Django-API-REST-SQLite/mysqlclient-1.4.6-cp39-cp39-win_amd64.whl
+pep517==0.11.0
+pip-tools==6.2.0
+psycopg2==2.9.1
+pytz==2021.1
+sqlparse==0.4.1
+tomli==1.2.1
+whitenoise==5.3.0
